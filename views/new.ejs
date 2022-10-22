@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captains Log</title>
+  </head>
+  <body>
+    <h1>Captains Log</h1>
+    <form action="/logs" method="POST">
+      <label for="title">Entry Title</label>
+      <input type="text" name="title" /><br />
+      <label for="entry">Entry</label>
+      <input type="textarea" name="entry" /><br />
+      <label for="shipIsBroken">Is the ship broken?</label>
+      <input type="checkbox" name="shipIsBroken" /><br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+  </body>
+</html>
