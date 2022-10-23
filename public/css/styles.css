@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  margin: 50px;
+}
+a[href="/logs/new"] {
+  text-decoration: none;
+}
+a {
+  color: rgb(15, 99, 168);
+}
