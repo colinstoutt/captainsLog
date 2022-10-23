@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Captains Log</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <h1>Captains Log</h1>
     <a href="/logs/new">Add New Entry</a>
+    <ul>
+      <% logs.forEach(log => { %>
+      <h2><a href="/logs/<%= log._id %>"><%= log.title %></a></h2>
+      <h4><%= log.entry %></h4>
+      <% }) %>
+    </ul>
   </body>
 </html>
